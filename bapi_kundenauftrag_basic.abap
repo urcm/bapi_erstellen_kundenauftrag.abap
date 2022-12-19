@@ -13,3 +13,9 @@ types: begin of ty_sales_order,
          item_number          type posnr, 
          requirement_quantity type plnmg,
        end of ty_sales_order.
+       
+       
+data: gt_sales_order type standard table of ty_sales_order,
+gs_sales_order type ty_sales_order,
+gv_kunnr       type kunnr,
+gv_matnr       type matnr.
