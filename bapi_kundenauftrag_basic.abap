@@ -38,7 +38,7 @@ start-of-selection.
 ******* den Kundenauftrag Header ausfüllen ****************
 
   gs_order_header_in-doc_type     = 'OR1'   .
-  gs_order_header_in-sales_org    = 'Z230'  .
+  gs_order_header_in-sales_org    = '0001'  .
   gs_order_header_in-distr_chan   = '01'    .
   gs_order_header_in-division     = '01'    .
   gs_order_header_in-purch_no_c   = 'PP'    .
