@@ -7,8 +7,8 @@ types: begin of ty_sales_order,
          division       type spart,
          customer       type kunnr,
          material       type matnr,
-         order_quantity type kwmeng, "VBAK (Header) & VBAP (Item details)
-         plant          type werks, "t001W
+         order_quantity type kwmeng, 
+         plant          type werks, 
        end of ty_sales_order.
 
 data: gt_sales_order type standard table of ty_sales_order,
