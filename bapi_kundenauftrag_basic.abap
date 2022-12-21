@@ -32,3 +32,20 @@ data: gs_order_header_in     type bapisdhd1,
       gs_order_schedules_in  type bapischdl,
       gt_order_schedules_inx type table of  bapischdlx,
       gs_order_schedules_inx type bapischdlx.
+
+start-of-selection.
+
+******* den Kundenauftrag Header ausfüllen ****************
+
+  gs_order_header_in-doc_type     = 'OR1'   .
+  gs_order_header_in-sales_org    = 'Z230'  .
+  gs_order_header_in-distr_chan   = '01'    .
+  gs_order_header_in-division     = '01'    .
+  gs_order_header_in-purch_no_c   = 'PP'    .
+
+  gs_order_header_inx-updateflag   =  'X' .
+  gs_order_header_inx-doc_type     =  'X' .
+  gs_order_header_inx-sales_org    =  'X' .
+  gs_order_header_inx-distr_chan   =  'X' .
+  gs_order_header_inx-division     =  'X' .
+  gs_order_header_inx-purch_no_c   =  'X' .
