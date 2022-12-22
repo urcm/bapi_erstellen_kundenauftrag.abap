@@ -49,3 +49,17 @@ start-of-selection.
   gs_order_header_inx-distr_chan   =  'X' .
   gs_order_header_inx-division     =  'X' .
   gs_order_header_inx-purch_no_c   =  'X' .
+  
+  
+  ******* Partnertabelle ausfüllen ****************
+
+
+  gv_kunnr = '0000000021'.
+
+
+  call function 'CONVERSION_EXIT_ALPHA_INPUT'
+    exporting
+      input  = gv_kunnr
+    importing
+      output = gv_kunnr.
+
