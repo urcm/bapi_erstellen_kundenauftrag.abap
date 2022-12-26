@@ -68,4 +68,9 @@ start-of-selection.
   gs_order_partners-partn_numb = gv_kunnr.
   append gs_order_partners to gt_order_partners.
   clear: gs_order_partners.
+  
+  gs_order_partners-partn_role = 'RE'." bill-to party
+  gs_order_partners-partn_numb = gv_kunnr.
+  append gs_order_partners to gt_order_partners.
+  clear: gs_order_partners.
 
