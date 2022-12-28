@@ -83,4 +83,9 @@ start-of-selection.
   gs_order_partners-partn_numb = gv_kunnr.
   append gs_order_partners to gt_order_partners.
   clear: gs_order_partners.
+  
+  
+******* Items ausfüllen ****************
+
+  gv_matnr = '000000000000000096'.
 
