@@ -88,4 +88,10 @@ start-of-selection.
 ******* Items ausfüllen ****************
 
   gv_matnr = '000000000000000096'.
+  
+  call function 'CONVERSION_EXIT_ALPHA_INPUT'
+    exporting
+      input  = gv_kunnr
+    importing
+      output = gv_kunnr.
 
