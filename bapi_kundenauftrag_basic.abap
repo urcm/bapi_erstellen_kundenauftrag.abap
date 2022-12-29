@@ -94,4 +94,9 @@ start-of-selection.
       input  = gv_kunnr
     importing
       output = gv_kunnr.
+      
+  gs_order_partners-partn_role = 'AG'. " sold-to party
+  gs_order_partners-partn_numb = gv_kunnr.
+  append gs_order_partners to gt_order_partners.
+  clear: gs_order_partners.
 
