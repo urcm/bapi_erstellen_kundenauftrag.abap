@@ -99,4 +99,11 @@ start-of-selection.
   gs_order_partners-partn_numb = gv_kunnr.
   append gs_order_partners to gt_order_partners.
   clear: gs_order_partners.
+  
+  gs_order_items_in-itm_number  = '10'.
+  gs_order_items_in-material    = gv_matnr.
+  gs_order_items_in-plant       = 'Z730'.
+  gs_order_items_in-target_qty  = '5'.
+  append gs_order_items_in to gt_order_items_in.
+  clear: gs_order_items_in.
 
