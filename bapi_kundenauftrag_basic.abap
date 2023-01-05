@@ -121,4 +121,10 @@ start-of-selection.
   gs_order_schedules_in-req_qty    = '10'.
   append gs_order_schedules_in to gt_order_schedules_in.
   clear: gs_order_schedules_in.
+  
+  gs_order_schedules_inx-itm_number = '10'.
+  gs_order_schedules_inx-req_qty    = 'X'.
+  gs_order_schedules_inx-updateflag = 'X'.
+  append gs_order_schedules_inx to gt_order_schedules_inx.
+  clear: gs_order_schedules_inx.
 
