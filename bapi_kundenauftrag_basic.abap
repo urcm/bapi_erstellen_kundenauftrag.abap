@@ -106,4 +106,11 @@ start-of-selection.
   gs_order_items_in-target_qty  = '5'.
   append gs_order_items_in to gt_order_items_in.
   clear: gs_order_items_in.
+  
+  gs_order_items_inx-itm_number  = '10'.
+  gs_order_items_inx-material    = 'X'.
+  gs_order_items_inx-plant       = 'X'.
+  gs_order_items_inx-target_qty  = 'X'.
+  append gs_order_items_inx to gt_order_items_inx.
+  clear: gs_order_items_inx.
 
