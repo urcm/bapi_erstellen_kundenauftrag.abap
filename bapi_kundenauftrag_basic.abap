@@ -113,4 +113,12 @@ start-of-selection.
   gs_order_items_inx-target_qty  = 'X'.
   append gs_order_items_inx to gt_order_items_inx.
   clear: gs_order_items_inx.
+  
+  
+******* Schedule Line ausfüllen ****************
+
+  gs_order_schedules_in-itm_number = '10'.
+  gs_order_schedules_in-req_qty    = '10'.
+  append gs_order_schedules_in to gt_order_schedules_in.
+  clear: gs_order_schedules_in.
 
