@@ -128,3 +128,40 @@ start-of-selection.
   append gs_order_schedules_inx to gt_order_schedules_inx.
   clear: gs_order_schedules_inx.
 
+  call function 'BAPI_SALESORDER_CREATEFROMDAT2'
+    exporting
+*     SALESDOCUMENTIN     =
+      order_header_in     = gs_order_header_in
+      order_header_inx    = gs_order_header_inx
+*     SENDER              =
+*     BINARY_RELATIONSHIPTYPE       =
+*     INT_NUMBER_ASSIGNMENT         =
+*     BEHAVE_WHEN_ERROR   =
+*     LOGIC_SWITCH        =
+*     TESTRUN             =
+*     CONVERT             = ' '
+    importing
+      salesdocument       = gv_salesdocument
+    tables
+      return              = gt_return
+      order_items_in      = gt_order_items_in
+      order_items_inx     = gt_order_items_inx
+      order_partners      = gt_order_partners
+      order_schedules_in  = gt_order_schedules_in
+      order_schedules_inx = gt_order_schedules_inx
+*     ORDER_CONDITIONS_IN =
+*     ORDER_CONDITIONS_INX=
+*     ORDER_CFGS_REF      =
+*     ORDER_CFGS_INST     =
+*     ORDER_CFGS_PART_OF  =
+*     ORDER_CFGS_VALUE    =
+*     ORDER_CFGS_BLOB     =
+*     ORDER_CFGS_VK       =
+*     ORDER_CFGS_REFINST  =
+*     ORDER_CCARD         =
+*     ORDER_TEXT          =
+*     ORDER_KEYS          =
+*     EXTENSIONIN         =
+*     PARTNERADDRESSES    =
+*     EXTENSIONEX         =
+    .
