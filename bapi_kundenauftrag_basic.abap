@@ -165,3 +165,13 @@ start-of-selection.
 *     PARTNERADDRESSES    =
 *     EXTENSIONEX         =
     .
+    
+   if gv_salesdocument is not initial.
+
+    call function 'BAPI_TRANSACTION_COMMIT'
+      exporting
+        wait = 'X'
+*     IMPORTING
+*       RETURN        =
+      .   
+    
