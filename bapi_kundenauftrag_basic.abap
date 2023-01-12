@@ -175,3 +175,10 @@ start-of-selection.
 *       RETURN        =
       .   
     
+    write :/  | Kundenauftrag wurde erstellt mit der Nummer { gv_salesdocument } |.
+
+  else.
+    write :/ 'Fehler beim Erstellen des Kundenauftrags'.
+
+
+  endif.
