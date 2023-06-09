@@ -1,2 +1,3 @@
-# bapi_erstellen_kundenauftrag.abap
+# bapi_kundenauftrag_anlegen_andern_lesen
+
 Batch-Kundenaufträge mit BAPI für VA01 anlegen
