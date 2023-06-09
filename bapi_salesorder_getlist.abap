@@ -36,3 +36,8 @@
 *tables  sales_orders   Table of orders for the customer
 *tables  extensionin   Reference Structure for BAPI Parameters ExtensionIn/Extensio
 *tables  extensionex   Reference Structure for BAPI Parameters ExtensionIn/Extensio
+
+
+data: lv_customer_number    type kunnr value '48',
+      lv_material           type matnr value '216',
+      lv_sales_organization type vkorg value 'ZM03'.
