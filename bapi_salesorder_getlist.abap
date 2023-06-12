@@ -41,3 +41,6 @@
 data: lv_customer_number    type kunnr value '48',
       lv_material           type matnr value '216',
       lv_sales_organization type vkorg value 'ZM03'.
+
+data: gt_sales_orders type standard table of bapiorders.
+data: gt_return type bapireturn.
