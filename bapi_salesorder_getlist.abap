@@ -44,3 +44,5 @@ data: lv_customer_number    type kunnr value '48',
 
 data: gt_sales_orders type standard table of bapiorders.
 data: gt_return type bapireturn.
+
+lv_customer_number  = |{ lv_customer_number width = 10 alpha = in }|.
