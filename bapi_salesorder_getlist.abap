@@ -46,3 +46,22 @@ data: gt_sales_orders type standard table of bapiorders.
 data: gt_return type bapireturn.
 
 lv_customer_number  = |{ lv_customer_number width = 10 alpha = in }|.
+
+all function 'BAPI_SALESORDER_GETLIST'
+  exporting
+    customer_number    = lv_customer_number   " Customer number
+*    sales_organization =     " Sales organization
+*    material           = lv_material   " Material number
+*   document_date      =     " Entry date
+*   document_date_to   =     " Entry date up to and including
+*   purchase_order     =     " Customer purchase order number
+*   transaction_group  = 0    " Single-Character Indicator
+*   purchase_order_number =     " Customer Purchase Order Number
+*   material_evg       =     " Long Material Number
+  importing
+    return             = gt_return    " Error Text
+  tables
+    sales_orders       = gt_sales_orders    " Table of orders for the customer
+*   extensionin        =     " Reference Structure for BAPI Parameters ExtensionIn/Extensio
+*   extensionex        =     " Reference Structure for BAPI Parameters ExtensionIn/Extensio
+  .
