@@ -50,7 +50,7 @@ lv_customer_number  = |{ lv_customer_number width = 10 alpha = in }|.
 all function 'BAPI_SALESORDER_GETLIST'
   exporting
     customer_number    = lv_customer_number   " Customer number
-*    sales_organization =     " Sales organization
+    sales_organization = lv_sales_organization    " Sales organization
 *    material           = lv_material   " Material number
 *   document_date      =     " Entry date
 *   document_date_to   =     " Entry date up to and including
