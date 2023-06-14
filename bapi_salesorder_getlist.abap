@@ -65,3 +65,8 @@ all function 'BAPI_SALESORDER_GETLIST'
 *   extensionin        =     " Reference Structure for BAPI Parameters ExtensionIn/Extensio
 *   extensionex        =     " Reference Structure for BAPI Parameters ExtensionIn/Extensio
   .
+
+
+cl_demo_output=>write_data( gt_return ).
+cl_demo_output=>write_data( gt_sales_orders ).
+cl_demo_output=>display(  ).      
