@@ -74,3 +74,11 @@
 *tables  extensionin   Customer Enhancement for VBAK, VBAP, VBEP
 *tables  partneraddresses   BAPI Reference Structure for Addresses (Org./Company)
 *tables  extensionex   Reference Structure for BAPI Parameters ExtensionIn/Extensio
+
+****** Header ***************************************
+
+data(gt_order_header_in) = value bapisdhd1( doc_type = 'OR1'
+                                           sales_org = 'ZM03'
+                                           distr_chan = 'O1'
+                                           division = 'P1'
+                                           purch_no_c = 'PP' ).
