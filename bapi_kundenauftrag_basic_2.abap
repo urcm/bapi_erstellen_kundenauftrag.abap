@@ -82,3 +82,11 @@ data(gt_order_header_in) = value bapisdhd1( doc_type = 'OR1'
                                            distr_chan = 'O1'
                                            division = 'P1'
                                            purch_no_c = 'PP' ).
+
+data(gt_order_header_inx) = value bapisdhd1x(
+                                         updateflag  = 'I'
+                                         doc_type = 'X'
+                                         sales_org = 'X'
+                                         distr_chan = 'X'
+                                         division = 'X'
+                                         purch_no_c = 'X' ).
