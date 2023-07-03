@@ -90,3 +90,8 @@ data(gt_order_header_inx) = value bapisdhd1x(
                                          distr_chan = 'X'
                                          division = 'X'
                                          purch_no_c = 'X' ).
+
+*********************************************
+
+data: gt_order_items_in type standard table of bapisditm.
+data: gs_order_items_in like line of gt_order_items_in.
