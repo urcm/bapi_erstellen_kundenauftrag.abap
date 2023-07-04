@@ -101,3 +101,7 @@ gs_order_items_in = value #( itm_number = '10' material ='000000000000000216' pl
                              target_qty = '10' target_qu = 'EA').
 
 insert gs_order_items_in into table gt_order_items_in.
+
+
+data: gt_order_items_inx  type standard table of bapisditmx.
+data: gs_order_items_inx like line of gt_order_items_inx.
