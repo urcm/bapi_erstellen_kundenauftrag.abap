@@ -105,3 +105,7 @@ insert gs_order_items_in into table gt_order_items_in.
 
 data: gt_order_items_inx  type standard table of bapisditmx.
 data: gs_order_items_inx like line of gt_order_items_inx.
+
+*********************************************
+data: lv_customer_number type kunnr value '49'.
+lv_customer_number  = |{ lv_customer_number width = 10 alpha = in }|.
