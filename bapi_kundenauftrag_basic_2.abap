@@ -122,3 +122,8 @@ gs_order_partners-partn_role = 'RE'.
 gs_order_partners-partn_numb = lv_customer_number.
 insert gs_order_partners into table gt_order_partners.
 clear: gs_order_partners.
+
+gs_order_partners-partn_role = 'RG'.
+gs_order_partners-partn_numb = lv_customer_number.
+insert gs_order_partners into table gt_order_partners.
+clear: gs_order_partners.
