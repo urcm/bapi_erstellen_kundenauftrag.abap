@@ -134,3 +134,6 @@ insert gs_order_partners into table gt_order_partners.
 clear: gs_order_partners.
 
 *************************************************
+
+data: gt_order_schedules_in  type standard table of bapischdl.
+data: gs_order_schedules_in  like line of gt_order_schedules_in.
