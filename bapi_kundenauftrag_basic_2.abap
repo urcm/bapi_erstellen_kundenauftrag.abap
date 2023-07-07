@@ -137,3 +137,6 @@ clear: gs_order_partners.
 
 data: gt_order_schedules_in  type standard table of bapischdl.
 data: gs_order_schedules_in  like line of gt_order_schedules_in.
+
+data: gt_order_schedules_inx  type standard table of bapischdlx.
+data: gs_order_schedules_inx  like line of gt_order_schedules_inx.
