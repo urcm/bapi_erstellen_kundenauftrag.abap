@@ -143,3 +143,6 @@ data: gs_order_schedules_inx  like line of gt_order_schedules_inx.
 
 gs_order_schedules_in = value #( itm_number = '10' req_qty ='10').
 insert gs_order_schedules_in into table gt_order_schedules_in.
+
+gs_order_schedules_inx = value #( updateflag = 'X' itm_number = '10' req_qty ='X').
+insert gs_order_schedules_inx into table gt_order_schedules_inx.
