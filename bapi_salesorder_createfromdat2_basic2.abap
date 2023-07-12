@@ -153,8 +153,8 @@ data: lv_salesdocument type vbeln_va.
 call function 'BAPI_SALESORDER_CREATEFROMDAT2'
   exporting
 *   salesdocumentin     =     " Sales and Distribution Document Number
-*   order_header_in     =  " Order Header
-*   order_header_inx    = " Sales Order Check List
+    order_header_in     = gt_order_header_in   " Order Header
+    order_header_inx    = gt_order_header_inx   " Sales Order Check List
 *   sender              =     " Logical System - Sender
 *   binary_relationshiptype =     " Binary Relationship Type (Private)
 *   int_number_assignment   =     " Internal Item Number Assignment
@@ -162,15 +162,15 @@ call function 'BAPI_SALESORDER_CREATEFROMDAT2'
 *   logic_switch        =     " Internal Control Parameter
 *   testrun             =     " Test Run
 *   convert             = SPACE    " Conversion of Partner Function + Order Type
-*  importing
-*   salesdocument       =  " Number of Generated Document
-*  tables
-*   return              =    " Return Messages
-*   order_items_in      =     " Item Data
-*   order_items_inx     =    " Item Data Checkbox
-*   order_partners      =   " Document Partner
-*   order_schedules_in  =  " Schedule Line Data
-*   order_schedules_inx =   " Checkbox Schedule Line Data
+  importing
+    salesdocument       = lv_salesdocument    " Number of Generated Document
+  tables
+    return              = gt_return    " Return Messages
+    order_items_in      = gt_order_items_in    " Item Data
+    order_items_inx     = gt_order_items_inx   " Item Data Checkbox
+    order_partners      = gt_order_partners   " Document Partner
+    order_schedules_in  = gt_order_schedules_in   " Schedule Line Data
+    order_schedules_inx = gt_order_schedules_inx   " Checkbox Schedule Line Data
 *   order_conditions_in =     " Conditions
 *   order_conditions_inx    =     " Conditions Checkbox
 *   order_cfgs_ref      =     " Configuration: Reference Data
