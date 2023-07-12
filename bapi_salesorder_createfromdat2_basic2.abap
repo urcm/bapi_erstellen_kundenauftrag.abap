@@ -149,3 +149,41 @@ insert gs_order_schedules_inx into table gt_order_schedules_inx.
 
 data: gt_return type standard table of bapiret2.
 data: lv_salesdocument type vbeln_va.
+
+call function 'BAPI_SALESORDER_CREATEFROMDAT2'
+  exporting
+*   salesdocumentin     =     " Sales and Distribution Document Number
+*   order_header_in     =  " Order Header
+*   order_header_inx    = " Sales Order Check List
+*   sender              =     " Logical System - Sender
+*   binary_relationshiptype =     " Binary Relationship Type (Private)
+*   int_number_assignment   =     " Internal Item Number Assignment
+*   behave_when_error   =     " Error Handling
+*   logic_switch        =     " Internal Control Parameter
+*   testrun             =     " Test Run
+*   convert             = SPACE    " Conversion of Partner Function + Order Type
+*  importing
+*   salesdocument       =  " Number of Generated Document
+*  tables
+*   return              =    " Return Messages
+*   order_items_in      =     " Item Data
+*   order_items_inx     =    " Item Data Checkbox
+*   order_partners      =   " Document Partner
+*   order_schedules_in  =  " Schedule Line Data
+*   order_schedules_inx =   " Checkbox Schedule Line Data
+*   order_conditions_in =     " Conditions
+*   order_conditions_inx    =     " Conditions Checkbox
+*   order_cfgs_ref      =     " Configuration: Reference Data
+*   order_cfgs_inst     =     " Configuration: Instances
+*   order_cfgs_part_of  =     " Configuration: Part-of Specifications
+*   order_cfgs_value    =     " Configuration: Characteristic Values
+*   order_cfgs_blob     =     " Configuration: BLOB Internal Data (SCE)
+*   order_cfgs_vk       =     " Configuration: Variant Condition Key
+*   order_cfgs_refinst  =     " Configuration: Reference Item / Instance
+*   order_ccard         =     " Credit Card Data
+*   order_text          =     " Texts
+*   order_keys          =     " Output Table of Reference Keys
+*   extensionin         =     " Customer Enhancement for VBAK, VBAP, VBEP
+*   partneraddresses    =     " BAPI Reference Structure for Addresses (Org./Company)
+*   extensionex         =     " Reference Structure for BAPI Parameters ExtensionIn/Extensio
+  .
