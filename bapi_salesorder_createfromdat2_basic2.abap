@@ -146,3 +146,6 @@ insert gs_order_schedules_in into table gt_order_schedules_in.
 
 gs_order_schedules_inx = value #( updateflag = 'X' itm_number = '10' req_qty ='X').
 insert gs_order_schedules_inx into table gt_order_schedules_inx.
+
+data: gt_return type standard table of bapiret2.
+data: lv_salesdocument type vbeln_va.
