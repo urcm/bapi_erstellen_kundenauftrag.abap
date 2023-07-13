@@ -187,3 +187,17 @@ call function 'BAPI_SALESORDER_CREATEFROMDAT2'
 *   partneraddresses    =     " BAPI Reference Structure for Addresses (Org./Company)
 *   extensionex         =     " Reference Structure for BAPI Parameters ExtensionIn/Extensio
   .
+
+if lv_salesdocument is not initial.
+
+  call function 'BAPI_TRANSACTION_COMMIT'
+    exporting
+      wait = 'X'    " Using the command `COMMIT AND WAIT`
+*  importing
+*     return =     " Return Messages
+    .
+
+  write :/ | Kundenauftrag wurde mit der Nummer { lv_salesdocument } erstellt |.
+
+
+endif.
