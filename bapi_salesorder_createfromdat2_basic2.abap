@@ -196,8 +196,11 @@ if lv_salesdocument is not initial.
 *  importing
 *     return =     " Return Messages
     .
-
   write :/ | Kundenauftrag wurde mit der Nummer { lv_salesdocument } erstellt |.
-
-
+else.
+  cl_demo_output=>write_data( 'Ein Fehler ist aufgetreten.' ).
+  cl_demo_output=>write_data( lv_salesdocument ).
+  cl_demo_output=>write_data( gt_return ).
+  cl_demo_output=>write_data( gt_order_items_in ).
+  cl_demo_output=>display(  ).
 endif.
