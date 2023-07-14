@@ -68,3 +68,9 @@
 *tables  conditions_inx   Conditions Checkbox
 *tables  extensionin   Customer Enhancement for VBAK, VBAP, VBEP
 *tables  extensionex   Reference Structure for BAPI Parameters ExtensionIn/Extensio
+
+data: gt_return type standard table of bapiret2.
+
+data: lv_salesdocument type vbeln_va .
+lv_salesdocument = '47'.
+lv_salesdocument = |{ lv_salesdocument width = 10 alpha = in }|.
