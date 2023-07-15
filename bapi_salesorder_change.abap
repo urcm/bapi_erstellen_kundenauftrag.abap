@@ -79,3 +79,9 @@ lv_salesdocument = |{ lv_salesdocument width = 10 alpha = in }|.
 data: lt_order_header_inx type bapisdh1x.
 
 lt_order_header_inx-updateflag = 'U'.
+
+
+*********************************************
+
+data: lt_order_items_in type standard table of bapisditm.
+data: ls_order_items_in like line of lt_order_items_in.
