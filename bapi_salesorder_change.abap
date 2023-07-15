@@ -74,3 +74,8 @@ data: gt_return type standard table of bapiret2.
 data: lv_salesdocument type vbeln_va .
 lv_salesdocument = '47'.
 lv_salesdocument = |{ lv_salesdocument width = 10 alpha = in }|.
+
+
+data: lt_order_header_inx type bapisdh1x.
+
+lt_order_header_inx-updateflag = 'U'.
