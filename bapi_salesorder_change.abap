@@ -88,3 +88,5 @@ data: ls_order_items_in like line of lt_order_items_in.
 
 ls_order_items_in = value #( itm_number = '10' material ='000000000000000216' plant = 'ZM03'
                              target_qty = '5' target_qu = 'EA').
+
+insert ls_order_items_in into table lt_order_items_in.
