@@ -97,3 +97,5 @@ data: ls_order_items_inx like line of lt_order_items_inx.
 
 ls_order_items_inx = value #( updateflag = 'I' itm_number = '10' material ='X' plant = 'X'
                              target_qty = 'X' target_qu = 'EA').
+
+insert ls_order_items_inx into table lt_order_items_inx.
