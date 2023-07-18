@@ -136,3 +136,8 @@ call function 'BAPI_SALESORDER_CHANGE'
   .
 
 call function 'BAPI_TRANSACTION_COMMIT'.
+
+cl_demo_output=>write_data( gt_return ).
+cl_demo_output=>write_data( lt_order_items_in ).
+cl_demo_output=>write_data( lt_order_header_inx ).
+cl_demo_output=>display(  ).
