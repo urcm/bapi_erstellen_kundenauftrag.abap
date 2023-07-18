@@ -134,3 +134,5 @@ call function 'BAPI_SALESORDER_CHANGE'
 *   extensionin      =     " Customer Enhancement for VBAK, VBAP, VBEP
 *   extensionex      =     " Reference Structure for BAPI Parameters ExtensionIn/Extensio
   .
+
+call function 'BAPI_TRANSACTION_COMMIT'.
